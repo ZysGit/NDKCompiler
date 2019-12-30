@@ -17,7 +17,7 @@ LOCAL_C_INCLUDES := $(LOCAL_LB_SRC_FILES)/base $(LOCAL_LB_SRC_FILES)/ext $(LOCAL
 # 6. 引入外部静态库 .a
 LOCAL_STATIC_LIBRARIES := cocos2dx_static
 # 引入外部动态库 .so
-# LOCAL_SHARED_LIBRARIES := cocos2dx_static
+# LOCAL_SHARED_LIBRARIES := cocos2dx_shared
 
 # 7. 构建方式-动态库 .so
 include $(BUILD_SHARED_LIBRARY)
@@ -35,3 +35,4 @@ $(call import-module,.)
 
 # Android.mk 全解： https://developer.android.com/ndk/guides/android_mk
 # Android NDK 详解： https://developer.android.com/ndk
+# ndk-build 命令详解：https://developer.android.com/ndk/guides/ndk-build
